@@ -1,0 +1,55 @@
+.debug {
+     border: red 2px solid;
+}
+
+* {    
+    box-sizing: border-box;
+    /*border: blue .5px solid;    */
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.4;
+}
+    
+
+/*---------> GENERAL STYLES <---------*/
+
+body {
+    font-size: 1rem;
+    min-width: 530px;
+}
+
+#wrapper {
+    width: 85%;
+    right: 0;
+    position: absolute;    
+}
+
+/*for larger screen*/
+
+
+
+.contact_pos .pms_input_of_lbl,
+.contact_lline .pms_input_of_lbl,
+.cell_num .pms_input_of_lbl,
+.email_cont .pms_input_of_lbl{
+    width: 50%;    
+    text-align: right;
+    /*border: red 1px solid;*/
+}
+
+
+.contact_pos .pms_lbl_of_input,
+.contact_lline .pms_lbl_of_input,
+.cell_num .pms_lbl_of_input,
+.email_cont .pms_lbl_of_input{
+    width: 50%;    
+    /*text-align: right;*/
+    /*border: red 1px solid;*/
+}
+
+
+@media( min-width: 0 ) {        
+
+}
