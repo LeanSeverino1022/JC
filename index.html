@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sample</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/pms.css">
-        <link rel="stylesheet" href="css/index.css">
+        <!--<link rel="stylesheet" href="css/pms.css">-->
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <header class="page_header">
-                <h1 class="page_title">Negros Island Consumer Sales, Incorporated</h1>
-                <p class="page_subtitle p5_align_center">BREDCO International Port, Reclation Area, Cambodia Street, Bacolod City</p>
+                <h1 class="page_title ">JAC</h1>
+                <p class="page_subtitle p5_align_center">bla bla bla bla</p>
 
                 <div class="p5_topRight">
                     <p style="margin: 0">date 00/00/00</p>
@@ -20,288 +20,187 @@
                 </div>
         </header>
         <main id="wrapper" class="">                   
-            <form action="index.html" method="post">               
+            <form action="index.html" method="post" class="pms_form">               
                 <fieldset class="pms_fieldset">
-                    <legend class="pms_legend"> Invoice Entry  </legend>
-                        <!--Account Id	int	8	id_account	-->
-                    <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_account">Account ID</label>
-                        </div>
-                        <div class="pms_input_of_lbl" >
-                            <input type="number" id="id_account" name="id_account"  maxlength="8" placeholder="Account ID">
-                        </div>
-                    </div>
+                    <legend class="pms_legend"> Customer Profile </legend>
+
+                    <div> <p class="required_msg">Fields with an asterisk (*) are mandatory</p> </div>
+
                 <!--Account Code	varchar	8	code_account	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
+                        <div class="lbl_of_ctrl">
                             <label for="code_account">Account Code</label>
                         </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="code_account" name="code_account" maxlength="8" placeholder="Account Code">
-                        </div>
+                        <input type="text" id="code_account" class="ctrl_of_lbl" name="code_account" maxlength="8" placeholder="Account Code">
                     </div>
 
                 <!--Business/Trade name	varchar	40	name_trade	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="name_trade">Business/Trade name</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="name_trade" name="name_trade" maxlength="40" placeholder="Business/Trade name 40">
-                        </div>
+                        <label for="name_trade">Business/Trade name</label>
+                        <input type="text" id="name_trade" class="ctrl_of_lbl" name="name_trade" maxlength="40" placeholder="Business/Trade name 40">
                     </div>
 
                 <!--Registered name	varchar	40	name_register	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="name_register">Registered name</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="name_register" name="name_register" maxlength="40" placeholder="Account">
-                        </div>
+                        <label for="name_register">Registered name</label>
+                        <input type="text" id="name_register" class="ctrl_of_lbl" name="name_register" maxlength="40" placeholder="Account">
                     </div>
 
                 <!--Zipcode	int	4	zip	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="zip">Zip code</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="number" id="zip" name="zip" maxlength="4" placeholder="Zip code">
-                        </div>
+                        <label for="zip">Zip code</label>
+                        <input type="number" id="zip" class="ctrl_of_lbl" name="zip" maxlength="4" placeholder="Zip code">
                     </div>
 
                 <!--Address (bldg, lot, block, street, purok)	varchar	60	address	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="address">Address</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="address" name="address" maxlength="60" placeholder="bldg, lot, block, street, purok">
-                        </div>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" class="ctrl_of_lbl" name="address" maxlength="60" placeholder="bldg, lot, block, street, purok">
                     </div>
 
                 <!--Barangay	int	8	id_barangay	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_barangay">Barangay</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_barangay" name="id_barangay">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_barangay">Barangay</label>
+                        <select id="id_barangay" class="ctrl_of_lbl" name="id_barangay">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--City/Town	int	8	id_city	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
                             <label for="id_city">City/Town</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_city" name="id_city">
+                            <select id="id_city" class="ctrl_of_lbl" name="id_city">
                                 <option value="">option 99999</option>
                                 <option value="">option</option>
                             </select>
-                        </div>
                     </div>
 
                 <!--Province	int	4	id_province	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_province">Province</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_province" name="id_province">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_province">Province</label>
+                        <select id="id_province" class="ctrl_of_lbl" name="id_province">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--Region	int	3	id_region	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_region">Region</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_region" name="id_region">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_region">Region</label>
+                        <select id="id_region" class="ctrl_of_lbl" name="id_region">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--Delivery Area	int 	3	id_deliver	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_deliver">Delivery Area</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_deliver" name="id_deliver">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_deliver">Delivery Area</label>
+                        <select id="id_deliver" class="ctrl_of_lbl" name="id_deliver">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--Tin number	varchar	20	tin	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="tin">Tin number</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="tin" name="tin" maxlength="20" placeholder="Tin number">
-                        </div>
+                        <label for="tin">Tin number</label>
+                        <input type="text" id="tin" class="ctrl_of_lbl" name="tin" maxlength="20" placeholder="Tin number">
                     </div>
 
                 <!--Account Type - type of operation	int	3	id_atype	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_atype">Account Type</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_atype" name="id_atype">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_atype">Account Type</label>
+                        <select id="id_atype" class="ctrl_of_lbl" name="id_atype">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--Account Classification - business classification	int	3	id_aclass	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_aclass">Account Classification</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <select id="id_aclass" name="id_aclass">
-                                <option value="">option 99999</option>
-                                <option value="">option</option>
-                            </select>
-                        </div>
+                        <label for="id_aclass">Account Classification</label>
+                        <select id="id_aclass" class="ctrl_of_lbl" name="id_aclass">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
                     </div>
 
                 <!--Account Status	char	1	status	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="status">Account Status</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="status" name="status" maxlength="1" placeholder="Account Status">
-                        </div>
+                        <label for="status">Account Status</label>
+                        <input type="text" id="status" class="ctrl_of_lbl" name="status" maxlength="1" placeholder="Account Status">
                     </div>
 
                 <!--Company Telephone No.	varchar	20	lline_company	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="lline_company">Company Telephone No.</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="tel" id="lline_company" name="lline_company" maxlength="20" placeholder="Company Telephone No.">
-                        </div>
+                        <label for="lline_company">Company Telephone No.</label>
+                        <input type="tel" id="lline_company" class="ctrl_of_lbl" name="lline_company" maxlength="20" placeholder="Company Telephone No.">
                     </div>
 
                 <!--Company Email	varchar	20	email_company	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="email_company">Company Email</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="email" id="email_company" name="email_company" maxlength="20" placeholder="example@gmail.com">
-                        </div>
+                        <label for="email_company">Company Email</label>
+                        <input type="email" id="email_company" class="ctrl_of_lbl" name="email_company" maxlength="20" placeholder="example@gmail.com">
                     </div>
 
                 <!--Company Fax No.	varchar	20	fax_company	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="fax_company">Company Fax No.</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="fax_company" name="fax_company" maxlength="20" placeholder="Company Fax Number">
-                        </div>
+                        <label for="fax_company">Company Fax No.</label>
+                        <input type="text" id="fax_company" class="ctrl_of_lbl" name="fax_company" maxlength="20" placeholder="Company Fax Number">
                     </div>
 
                 <!--Company Website	varchar	20	url_company	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="url_company">Company Website</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="url" id="url_company" name="url_company" maxlength="20" placeholder="www.nameofwebsite.com">
-                        </div>
+                        <label for="url_company">Company Website</label>
+                        <input type="url" id="url_company" class="ctrl_of_lbl" name="url_company" maxlength="20" placeholder="www.nameofwebsite.com">
                     </div>
 
                 <!--Contact Person	varchar	40	contact	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="contact">Contact Person</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="contact" name="contact" maxlength="40" placeholder="Contact Person">
-                        </div>
+                        <label for="contact">Contact Person</label>
+                        <input type="text" id="contact" class="ctrl_of_lbl" name="contact" maxlength="40" placeholder="Contact Person">
                     </div>
 
                 <!--Contact Person Company Position	varchar	30	contact_position	-->
-                    <div class="pms_lbl_input_pair contact_pos">
-                        <div class="pms_lbl_of_input">
-                            <label for="contact_position">Contact Person Company Position</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="contact_position" name="contact_position" maxlength="30" placeholder="Contact person's company position">
-                        </div>
+                    <div class="pms_lbl_input_pair">
+                        <label for="contact_position">Contact Person Company Position</label>
+                        <input type="text" id="contact_position" class="ctrl_of_lbl" name="contact_position" maxlength="30" placeholder="Contact person's company position">
                     </div>
 
                 <!--Contact Person Telephone No.	varchar	20	lline_contact	-->
                     <div class="pms_lbl_input_pair contact_lline">
-                        <div class="pms_lbl_of_input">
-                            <label for="lline_contact">Contact Person Telephone No.</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="tel" id="lline_contact" name="lline_contact" maxlength="20" placeholder="(000) 000-0000)">
-                        </div>
+                        <label for="lline_contact">Contact Person Telephone No.</label>
+                        <input type="tel" id="lline_contact" class="ctrl_of_lbl" name="lline_contact" maxlength="20" placeholder="(000) 000-0000)">
                     </div>
 
                 <!--Contact Person Email Address	varchar	20	email_contact	-->
-                    <div class="pms_lbl_input_pair email_cont">
-                        <div class="pms_lbl_of_input">
-                            <label for="email_contact">Contact Person Email Address</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="email_contact" name="email_contact" maxlength="20"placeholder="example@gmail.com">
-                        </div>
+                    <div class="pms_lbl_input_pair">
+                        <label for="email_contact">Contact Person Email Address</label>
+                        <input type="text" id="email_contact" class="ctrl_of_lbl" name="email_contact" maxlength="20"placeholder="example@gmail.com">
                     </div>
 
                 <!--Contact Person Cell Number	varchar	20	celln_contact	-->
-                    <div class="pms_lbl_input_pair cell_num">
-                        <div class="pms_lbl_of_input">
-                            <label for="celln_contact">Contact Person Cell Number</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="celln_contact" name="celln_contact" maxlength="20" placeholder="Contact person's cell number">
-                        </div>
+                    <div class="pms_lbl_input_pair">
+                        <label for="celln_contact">Contact Person Cell Number</label>
+                        <input type="text" id="celln_contact" class="ctrl_of_lbl" name="celln_contact" maxlength="20" placeholder="Contact person's cell number">
                     </div>
 
-    <!--Credit Limit	decimal	12,2	creditlimit	-->
+                <!--Credit Limit	decimal	12,2	creditlimit	-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="creditlimit">Credit Limit</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="number" id="creditlimit" name="creditlimit" maxlength="4" placeholder="Credit Limit">
-                        </div>
+                        <label for="creditlimit">Credit Limit</label>
+                        <input type="number" id="creditlimit" class="ctrl_of_lbl" name="creditlimit" maxlength="4" placeholder="Credit Limit">
                     </div>
 
                 <!--Assigned Salesperson	int	4	id_salesperson	tabled-->
                     <div class="pms_lbl_input_pair">
-                        <div class="pms_lbl_of_input">
-                            <label for="id_salesperson">Assigned Salesperson</label>
-                        </div>
-                        <div class="pms_input_of_lbl">
-                            <input type="text" id="id_salesperson" name="id_salesperson" maxlength="4" placeholder="Assigned Salesperson">
-                        </div>
-                    </div>                     
+                        <label for="id_salesperson">Assigned Salesperson</label>
+                        <select id="id_salesperson" class="ctrl_of_lbl" name="id_salesperson">
+                            <option value="">option 99999</option>
+                            <option value="">option</option>
+                        </select>
+                    </div>          
                 </fieldset>                  
             </form>
         </main>    
@@ -310,9 +209,3 @@
 </html>
 
 
-<!--
-
-- button vs input type button
-
-
--->
