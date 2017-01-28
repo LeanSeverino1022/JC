@@ -16,7 +16,7 @@ html {
 
 body {
     font-size: 1rem;
-    background: #E9E9E9;
+    background: #f2f2f2;
     color: #111;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .pms_form {
-    background: #f2f2f2;
+    /*background: #f2f2f2;*/
     font-size: 13px;
     font-family: Arial,sans-serif;
 }
@@ -134,7 +134,7 @@ body {
 
     border-top:#949494;
     border-right: #a6a6a6;
-    border-bottom: #a6a6a6;
+    /*border-bottom: #a6a6a6;*/
     border-left: #a6a6a6;        
 } 
 
