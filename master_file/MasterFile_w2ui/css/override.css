@@ -1,0 +1,7 @@
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-even,
+.w2ui-grid .w2ui-grid-body .w2ui-grid-frecords table tr.w2ui-even {
+  /*color: inherit;*/
+  background-color: #eff9f4;
+  /*border: red 2px solid;*/
+}
+

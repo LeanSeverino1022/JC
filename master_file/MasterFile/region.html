@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <link rel="stylesheet" href="common.css">																					
+
+    </head>
+    <body>
+        <header class="page_header">
+                <h1 class="page_title ">JAC</h1>
+                <p class="page_subtitle p5_align_center">bla bla bla bla</p>
+
+                <div class="p5_topRight">
+                    <p style="margin: 0">date 00/00/00</p>
+                    <img src="" style="width: 25px; height: 25px">
+                </div>
+        </header>
+        <main id="wrapper" class="">                   
+            <form action="index.html" method="post" class="pms_form">               
+                <fieldset class="pms_fieldset">
+                    <legend class="pms_legend">Region</legend>  
+												
+                <!--Region Code	varchar	6	code_region-->
+                    <div class="pms_lbl_input_pair">
+                        <label for="code_region">Region Code</label>
+                        <input type="text" id="code_region" class="ctrl_of_lbl" name="code_region" maxlength="6" placeholder="">
+                    </div>
+
+                <!--Region Name	varchar	40	name_region	-->
+                    <div class="pms_lbl_input_pair">
+                        <label for="name_region">Region Name</label>
+                        <input type="text" id="name_region" class="ctrl_of_lbl" name="name_region" maxlength="40" placeholder="">
+                    </div>
+
+
+                <!--Status	char	1	status-->
+                    <div class="pms_lbl_input_pair">
+                        <label for="status">Status</label>
+                        <input type="text" id="status" class="ctrl_of_lbl" name="status" maxlength="1" placeholder="">
+                    </div>   
+   
+                </fieldset>                  
+            </form>
+        </main>    
+    </body>   
+    
+</html>
+
+
